@@ -1,0 +1,85 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: baseline-pay.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 20 max VUs, 45s max duration (incl. graceful stop):
+              * default: 20 looping VUs for 15s (gracefulStop: 30s)
+
+
+running (01.0s), 20/20 VUs, 11665 complete and 0 interrupted iterations
+default   [   7% ] 20 VUs  01.0s/15s
+
+running (02.0s), 20/20 VUs, 23776 complete and 0 interrupted iterations
+default   [  13% ] 20 VUs  02.0s/15s
+
+running (03.0s), 20/20 VUs, 35940 complete and 0 interrupted iterations
+default   [  20% ] 20 VUs  03.0s/15s
+
+running (04.0s), 20/20 VUs, 47625 complete and 0 interrupted iterations
+default   [  27% ] 20 VUs  04.0s/15s
+
+running (05.0s), 20/20 VUs, 59866 complete and 0 interrupted iterations
+default   [  33% ] 20 VUs  05.0s/15s
+
+running (06.0s), 20/20 VUs, 72356 complete and 0 interrupted iterations
+default   [  40% ] 20 VUs  06.0s/15s
+
+running (07.0s), 20/20 VUs, 84490 complete and 0 interrupted iterations
+default   [  47% ] 20 VUs  07.0s/15s
+
+running (08.0s), 20/20 VUs, 96668 complete and 0 interrupted iterations
+default   [  53% ] 20 VUs  08.0s/15s
+
+running (09.0s), 20/20 VUs, 108688 complete and 0 interrupted iterations
+default   [  60% ] 20 VUs  09.0s/15s
+
+running (10.0s), 20/20 VUs, 121291 complete and 0 interrupted iterations
+default   [  67% ] 20 VUs  10.0s/15s
+
+running (11.0s), 20/20 VUs, 133621 complete and 0 interrupted iterations
+default   [  73% ] 20 VUs  11.0s/15s
+
+running (12.0s), 20/20 VUs, 145501 complete and 0 interrupted iterations
+default   [  80% ] 20 VUs  12.0s/15s
+
+running (13.0s), 20/20 VUs, 157688 complete and 0 interrupted iterations
+default   [  87% ] 20 VUs  13.0s/15s
+
+running (14.0s), 20/20 VUs, 169802 complete and 0 interrupted iterations
+default   [  93% ] 20 VUs  14.0s/15s
+
+running (15.0s), 20/20 VUs, 182467 complete and 0 interrupted iterations
+default   [ 100% ] 20 VUs  15.0s/15s
+
+
+  █ TOTAL RESULTS 
+
+    HTTP
+    http_req_duration..............: avg=1.61ms min=144.58µs med=1.4ms  max=7.98ms p(90)=2.55ms p(95)=2.87ms
+      { expected_response:true }...: avg=1.61ms min=144.58µs med=1.4ms  max=7.98ms p(90)=2.56ms p(95)=2.87ms
+    http_req_failed................: 5.04%  9202 out of 182528
+    http_reqs......................: 182528 12167.419137/s
+
+    EXECUTION
+    iteration_duration.............: avg=1.63ms min=183.38µs med=1.42ms max=8.7ms  p(90)=2.58ms p(95)=2.9ms 
+    iterations.....................: 182528 12167.419137/s
+    vus............................: 20     min=20             max=20
+    vus_max........................: 20     min=20             max=20
+
+    NETWORK
+    data_received..................: 45 MB  3.0 MB/s
+    data_sent......................: 17 MB  1.1 MB/s
+
+
+
+
+running (15.0s), 00/20 VUs, 182528 complete and 0 interrupted iterations
+default ✓ [ 100% ] 20 VUs  15s
